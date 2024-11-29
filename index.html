@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - DevConnect</title>
+    <!-- Fonte do Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Container do Formulário -->
+    <div id="form-container" class="form-box">
+      <h1 class="form-title">Cadastro - DevConnect</h1>
+      <form id="user-form" class="form-content">
+        <input
+          type="text"
+          id="full-name"
+          class="input-field"
+          placeholder="Nome Completo"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          class="input-field"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          class="input-field"
+          placeholder="Senha"
+          required
+        />
+        <input
+          type="password"
+          id="confirm-password"
+          class="input-field"
+          placeholder="Confirme a Senha"
+          required
+        />
+        <button type="submit" id="submit-button" class="submit-button">
+          Cadastrar
+        </button>
+      </form>
+    </div>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

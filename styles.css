@@ -1,0 +1,111 @@
+/* Background e fonte */
+body {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #2e2e2e, #000);
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Caixa principal */
+  .form-box {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Conteúdo do formulário */
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Título */
+  .form-title {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Campos de entrada */
+  .input-field {
+    width: 90%;
+    max-width: 350px;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  
+  .input-field:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  /* Botão de submissão */
+  .submit-button {
+    width: 90%;
+    max-width: 350px;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.05);
+    background: rgba(0, 123, 255, 1);
+  }
+  
+  /* Mensagem de sucesso */
+  .success-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 600px) {
+    .form-box {
+      padding: 1.5rem;
+      width: 95%;
+      height: auto;
+    }
+  
+    .form-title {
+      font-size: 1.3rem;
+    }
+  
+    .input-field, .submit-button {
+      padding: 0.7rem;
+    }
+  }
+  
